@@ -11,10 +11,116 @@
 </head>
 
 <body>
-    <!-- Your code goes here -->
-    <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+    
+    <div class="page" style="display: flex;">
+
+        <div class="left">
+            <div class="mainImg">
+                <img id="mainImage" src="./images/intern.jpg" alt="#">
+            </div>
+        
+            <div class="downImgs">
+                <div class="img">
+                    <img src="./images/intern1.jpg" alt="" onclick="changeMainImage(this)">
+                </div>
+                <div class="img">
+                    <img src="./images/intern2.jpg" alt="" onclick="changeMainImage(this)">
+                </div>
+                <div class="img">
+                    <img src="./images/intern3.jpg" alt="" onclick="changeMainImage(this)">
+                </div>
+                <div class="img">
+                    <img src="./images/intern4.jpg" alt="" onclick="changeMainImage(this)">
+                </div>
+            </div>
+        </div>
+
+    <div class="right">
+
+        <div class="container">
+
+            <div class="marmeto" style="margin:15px 0px;">
+                <p style="font-size:15px; color:rgb(125, 128, 128)">Marmeto</p>
+            </div>
+
+            <div class="embrace" style="margin: 15px 0px;">
+                <p style="font-size: 20px;"><b>Embrace Slideboard</b></p>
+            </div>
+
+            <div class="diff" style="border: 1px solid rgb(179, 175, 175);margin: 15px 0px;"></div>
+            
+            
+            <div class="product" style="margin: 15px 0px;">
+                <div class="same" style="display: flex; flex-direction:column">
+                    <div class="price">$12,999.00</div>
+                    <div class="price-tag"><span>$19999.00</span></div>
+                </div>
+                <div class="discount" style="padding-bottom: 35px; margin: 15px 0px;">35% Off</div>
+            </div>
+            
+
+            <div class="diff" style="border: 1px solid rgb(179, 175, 175);"></div>
+            
+            
+            <p style="margin: 15px 0px; color:rgb(125, 128, 128)">Choose a Color</p>
+            <div class="colors" style="margin: 15px 0px;">
+                <div class="color-swatch" style="background-color: beige"></div>
+                <div class="color-swatch" style="background-color: green"></div>
+                <div class="color-swatch" style="background-color: blue"></div>
+                <div class="color-swatch" style="background-color: pink"></div>
+            </div>
+
+            <div class="diff" style="border: 1px solid rgb(179, 175, 175);"></div>
+            
+            <p style="margin: 15px 0px; color:rgb(125, 128, 128)">Choose a Size</p>
+            <div class="sizes">
+                <div class="size-option">
+                  <input type="checkbox" name="small" id="small"><label for="small">Small</label>
+                </div>
+                <div class="size-option">
+                  <input type="checkbox" name="medium" id="medium"><label for="medium">Medium</label>
+                </div>
+                <div class="size-option">
+                  <input type="checkbox" name="large" id="large"><label for="large">Large</label>
+                </div>
+                <div class="size-option">
+                  <input type="checkbox" name="extra-large" id="extra-large"><label for="extra-large">Extra Large</label>
+                </div>
+                <div class="size-option">
+                  <input type="checkbox" name="xxl" id="xxl"><label for="xxl">XXL</label>
+                </div>
+              </div>
+
+              
+              <div class="btns" style="display: flex; gap:20px; margin: 15px 0px;">
+                  
+                  <div class="adds">
+                      
+                      <button id="minusBtn" class="button">-</button>
+                      <span id="number">1</span>
+                      <button id="plusBtn" class="button">+</button>
+                      
+                    </div>
+                    <div class="addCart">
+                        
+                        <button class="add-button" onclick="addToCart()">+ Add To Cart</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="diff" style="border: 1px solid rgb(179, 175, 175); margin: 15px 0px;"></div>
+
+                <p style="color:rgb(125, 128, 128)">
+                The Embrace Sideboard is a stylish wear. With a top cloth designed to provide superior protection and look great , this storage solution is both functional and attractive. It fits seamlessly into any home decor , with clean lines and a timeless look. Crafted from premium material for a combination of style, durability , and reliablity.
+            </p>
+        </div>
+
     </div>
+
+    
+</div>
+
+
     <!-- Happy coding 😊 -->
     <script src="./script.js"></script>
 </body>

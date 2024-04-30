@@ -1,36 +1,227 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300");
-html,
-body {
-  height: 100%;
-  width: 100%;
+
+*{
+  padding: 0;
   margin: 0;
 }
-body {
+
+.left{
+  width: 50%;
+  /* border: 2px solid black; */
+}
+
+ .mainImg img {
+  width: 350px; /* Adjust the width as needed */
+  height: 450px;
+  padding-top: 40px;
+  padding-left: 100px;
+  border-radius: 15px; 
+ }
+ .downImgs {
   display: flex;
-  justify-content: center;
+  /* justify-content:space-around; */
+  padding: 0px 30px;
+  margin: 20px 75px;
+}
+
+.downImgs .img {
+  width: 25%; /* Adjust this value as needed */
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.downImgs .img:last-child {
+  margin-right: 0; /* Remove margin from the last image */
+}
+
+.downImgs .img img {
+  width: 70px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Adjust border radius as needed */
+}
+
+
+
+
+.right{
+  /* padding-left: 0px; */
+  padding-top: 40px;
+}
+
+
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+/* Product details */
+.product {
+  display: flex;
+ gap: 20px;
   align-items: center;
-  background: linear-gradient(to right bottom, #873572, black);
+  margin-bottom: 20px;
 }
-a {
+.price {
+  font-size: 24px;
+  color: #333;
+}
+.discount {
+  font-size: 18px;
+  color: #ff0000;
+}
+.colors {
+  display: flex;
+  gap: 10px;
+}
+.color-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Size options */
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.size-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Add to cart buttons */
+.add-to-cart {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.add-button {
+  background-color: #6c5b9e;
+  color: #ffffff;
+  width: 220px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.quantity {
+  font-size: 18px;
+  color: #666;
+}
+
+
+/* Strikethrough effect */
+.price-tag {
+  padding: 10px;
   display: inline-block;
-  color: lightgrey;
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-  white-space: nowrap;
-  padding: 12px;
-  border: 1px solid white;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: all 0.15s ease-in-out;
 }
 
-a:hover {
-  background: rgba(0, 0, 0, 0.23);
-  color: white;
-  transform: scale(1.03);
-  text-decoration: none;
-}
-a:active {
-  transform: scale(0.98);
+.price-tag span {
+  text-decoration: line-through;
+  color: #888;
 }
 
+
+/* color */
+.color-swatch {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border: 1px ;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.color-swatch:hover {
+  border: 0px solid #d0c8c8;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.sizes {
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/* Style the checkbox container */
+.size-option {
+  display: flex;
+  align-items: center;
+  /* border: 2px solid rgb(174, 171, 171); */
+  border-radius: 12px;
+  background-color: rgb(236, 232, 232);
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Style the checkbox */
+.size-option input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* Make the checkbox a circle */
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style the label text */
+.size-option label {
+  cursor: pointer;
+}
+
+/* Checked state */
+.size-option input[type="checkbox"]:checked {
+  background-color: #2196F3;
+}
+
+/* Checked state color for Firefox */
+.size-option input[type="checkbox"]:checked:-moz-checked {
+  background-color: #2196F3;
+}
+
+/* Hover effect */
+.size-option input[type="checkbox"]:hover {
+  background-color: #ccc;
+}
+
+/* Focus effect */
+.size-option input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+.adds{
+  /* border:2px solid black ; */
+  padding: 3px 21px ;
+  border-radius: 20px;
+  /* background-color: rgb(216, 213, 213); */
+  background-color: rgb(243 243 243);
+}
+
+.button {
+  font-size: 18px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  /* border-radius: 5px; */
+  /* background-color: #4CAF50; */
+  /* color: white; */
+}
